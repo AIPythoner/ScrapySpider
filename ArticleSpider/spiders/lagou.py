@@ -49,8 +49,8 @@ class LagouSpider(CrawlSpider):
     def start_requests(self):
         cookie_dict = {}
         self.browser.get("https://passport.lagou.com/login/login.html")
-        self.browser.find_element_by_css_selector(".active input[placeholder='请输入常用手机号/邮箱']").send_keys("18299536448")
-        self.browser.find_element_by_css_selector(".active input[placeholder='请输入密码']").send_keys("zdj515158.")
+        self.browser.find_element_by_css_selector(".active input[placeholder='请输入常用手机号/邮箱']").send_keys("1829******8")
+        self.browser.find_element_by_css_selector(".active input[placeholder='请输入密码']").send_keys("********")
         self.browser.find_element_by_css_selector(".active  input.btn_green").click()
         time.sleep(20)
 
